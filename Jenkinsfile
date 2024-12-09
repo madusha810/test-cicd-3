@@ -40,7 +40,7 @@ pipeline {
                     // Ensure no existing container with the same name is running
                     sh """
                     docker rm -f ${CONTAINER_NAME} || true
-                    docker run --name ${CONTAINER_NAME} -d -p 8080:80 ${DOCKER_IMAGE}
+                    docker run --name ${CONTAINER_NAME} -d -p 8080:80 ${DOCKER_IMAGE}:latest
                     """
                 }
             }
