@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_REGISTRY = 'docker.io'
+        DOCKER_REGISTRY = 'https://registry.hub.docker.com'
         DOCKER_IMAGE = 'madusha810/test-cicd-3'
         CONTAINER_NAME = 'my-first-container'
     }
